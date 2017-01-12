@@ -14,6 +14,7 @@
 		0DE502DF1E2721EC005BD68B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE502DD1E2721EC005BD68B /* LaunchScreen.storyboard */; };
 		0DE502EA1E2721EC005BD68B /* ProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE502E91E2721EC005BD68B /* ProtocolTests.swift */; };
 		0DE502F51E2721EC005BD68B /* ProtocolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE502F41E2721EC005BD68B /* ProtocolUITests.swift */; };
+		0DE503041E272281005BD68B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE503031E272281005BD68B /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0DE502F01E2721EC005BD68B /* ProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE502F41E2721EC005BD68B /* ProtocolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolUITests.swift; sourceTree = "<group>"; };
 		0DE502F61E2721EC005BD68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DE503031E272281005BD68B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		0DE502D31E2721EC005BD68B /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				0DE503021E27225C005BD68B /* model */,
 				0DE502D41E2721EC005BD68B /* AppDelegate.swift */,
 				0DE502D61E2721EC005BD68B /* ViewController.swift */,
 				0DE502D81E2721EC005BD68B /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				0DE502F61E2721EC005BD68B /* Info.plist */,
 			);
 			path = ProtocolUITests;
+			sourceTree = "<group>";
+		};
+		0DE503021E27225C005BD68B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0DE503031E272281005BD68B /* User.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 			files = (
 				0DE502D71E2721EC005BD68B /* ViewController.swift in Sources */,
 				0DE502D51E2721EC005BD68B /* AppDelegate.swift in Sources */,
+				0DE503041E272281005BD68B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
