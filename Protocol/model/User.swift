@@ -8,7 +8,7 @@
 
 import UIKit
 
-class User: NSObject {
+struct User {
     let name: String
     let message: String
     
