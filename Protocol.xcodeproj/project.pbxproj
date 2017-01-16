@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D182EC11E2C96DE0078FADA /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D182EC01E2C96DE0078FADA /* Client.swift */; };
+		0D182EC31E2C9A4D0078FADA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D182EC21E2C9A4D0078FADA /* Response.swift */; };
 		0DE502D51E2721EC005BD68B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE502D41E2721EC005BD68B /* AppDelegate.swift */; };
 		0DE502D71E2721EC005BD68B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE502D61E2721EC005BD68B /* ViewController.swift */; };
 		0DE502DA1E2721EC005BD68B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE502D81E2721EC005BD68B /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D182EC01E2C96DE0078FADA /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		0D182EC21E2C9A4D0078FADA /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		0DE502D11E2721EC005BD68B /* Protocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Protocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE502D41E2721EC005BD68B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DE502D61E2721EC005BD68B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 			children = (
 				0DE503031E272281005BD68B /* User.swift */,
 				0DE503051E272436005BD68B /* UserRequest.swift */,
+				0D182EC01E2C96DE0078FADA /* Client.swift */,
+				0D182EC21E2C9A4D0078FADA /* Response.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -279,6 +285,8 @@
 				0DE503061E272436005BD68B /* UserRequest.swift in Sources */,
 				0DE502D71E2721EC005BD68B /* ViewController.swift in Sources */,
 				0DE502D51E2721EC005BD68B /* AppDelegate.swift in Sources */,
+				0D182EC11E2C96DE0078FADA /* Client.swift in Sources */,
+				0D182EC31E2C9A4D0078FADA /* Response.swift in Sources */,
 				0DE503041E272281005BD68B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +538,7 @@
 				0DE502FB1E2721EC005BD68B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DE502FC1E2721EC005BD68B /* Build configuration list for PBXNativeTarget "ProtocolTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +547,7 @@
 				0DE502FE1E2721EC005BD68B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DE502FF1E2721EC005BD68B /* Build configuration list for PBXNativeTarget "ProtocolUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +556,7 @@
 				0DE503011E2721EC005BD68B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
