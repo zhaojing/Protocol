@@ -20,6 +20,7 @@ protocol Request {
     var method: HTTPMethod { get }
     var parameter: [String: Any] { get }
     associatedtype Response
+    func parse(data: Data) -> Response?
 }
 
 extension Request {
@@ -30,8 +31,11 @@ extension Request {
         
         let task = URLSession.shared.dataTask(with: request) {
             data, res, error in
-            // 处理结果
-            print(data)
+            if let data = data, let res = self.parse(data: data) {
+                DispatchQueue.main.async { handler(res) }
+            } else {
+                DispatchQueue.main.async { handler(nil) }
+            }
         }
         task.resume()
     }
@@ -47,4 +51,8 @@ struct UserRequest: Request {
     let method: HTTPMethod = .GET
     let parameter: [String: Any] = [:]
     typealias Response = User
+    
+    func parse(data: Data) -> User? {
+        return User(data: data)
+    }
 }

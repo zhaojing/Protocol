@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func tap(_ sender: Any) {
+        let request = UserRequest(name: "onevcat")
+        request.send { user in
+            if let user = user {
+                print("\(user.message) from \(user.name)")
+            }
+        }
+    }
 
 }
 
