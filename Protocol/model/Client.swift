@@ -9,14 +9,12 @@
 import Foundation
 
 protocol Client {
-    
     func send<T : Request>(_ r : T, handler : @escaping (T.Response?) -> Void)
     
     var host: String { get }
 }
 
 struct URLSessionClient: Client {
-    
     let host = "https://api.onevcat.com"
     
     func send<T: Request>(_ r: T, handler: @escaping (T.Response?) -> Void) {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D182EC11E2C96DE0078FADA /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D182EC01E2C96DE0078FADA /* Client.swift */; };
 		0D182EC31E2C9A4D0078FADA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D182EC21E2C9A4D0078FADA /* Response.swift */; };
+		0D182EC61E2C9F810078FADA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D182EC51E2C9F810078FADA /* Request.swift */; };
 		0DE502D51E2721EC005BD68B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE502D41E2721EC005BD68B /* AppDelegate.swift */; };
 		0DE502D71E2721EC005BD68B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE502D61E2721EC005BD68B /* ViewController.swift */; };
 		0DE502DA1E2721EC005BD68B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE502D81E2721EC005BD68B /* Main.storyboard */; };
@@ -38,8 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D182EC01E2C96DE0078FADA /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		0D182EC21E2C9A4D0078FADA /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		0D182EC01E2C96DE0078FADA /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = model/Client.swift; sourceTree = "<group>"; };
+		0D182EC21E2C9A4D0078FADA /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = model/Response.swift; sourceTree = "<group>"; };
+		0D182EC51E2C9F810078FADA /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		0DE502D11E2721EC005BD68B /* Protocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Protocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE502D41E2721EC005BD68B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DE502D61E2721EC005BD68B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D182EC41E2C9CAC0078FADA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0D182EC21E2C9A4D0078FADA /* Response.swift */,
+				0D182EC01E2C96DE0078FADA /* Client.swift */,
+				0D182EC51E2C9F810078FADA /* Request.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		0DE502C81E2721EC005BD68B = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +117,8 @@
 		0DE502D31E2721EC005BD68B /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				0DE503021E27225C005BD68B /* model */,
+				0D182EC41E2C9CAC0078FADA /* Base */,
+				0DE503021E27225C005BD68B /* Model */,
 				0DE502D41E2721EC005BD68B /* AppDelegate.swift */,
 				0DE502D61E2721EC005BD68B /* ViewController.swift */,
 				0DE502D81E2721EC005BD68B /* Main.storyboard */,
@@ -134,14 +147,13 @@
 			path = ProtocolUITests;
 			sourceTree = "<group>";
 		};
-		0DE503021E27225C005BD68B /* model */ = {
+		0DE503021E27225C005BD68B /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				0DE503031E272281005BD68B /* User.swift */,
 				0DE503051E272436005BD68B /* UserRequest.swift */,
-				0D182EC01E2C96DE0078FADA /* Client.swift */,
-				0D182EC21E2C9A4D0078FADA /* Response.swift */,
 			);
+			name = Model;
 			path = model;
 			sourceTree = "<group>";
 		};
@@ -286,6 +298,7 @@
 				0DE502D71E2721EC005BD68B /* ViewController.swift in Sources */,
 				0DE502D51E2721EC005BD68B /* AppDelegate.swift in Sources */,
 				0D182EC11E2C96DE0078FADA /* Client.swift in Sources */,
+				0D182EC61E2C9F810078FADA /* Request.swift in Sources */,
 				0D182EC31E2C9A4D0078FADA /* Response.swift in Sources */,
 				0DE503041E272281005BD68B /* User.swift in Sources */,
 			);

@@ -8,25 +8,9 @@
 
 import UIKit
 
-enum HTTPMethod: String {
-    case GET
-    case POST
-}
-
-protocol Request {
-    var host: String { get }
-    var path: String { get }
-    
-    var method: HTTPMethod { get }
-    var parameter: [String: Any] { get }
-    
-    associatedtype Response: Decodable
-}
-
 struct UserRequest: Request {
     let name: String
     
-    let host = "https://api.onevcat.com"
     var path: String {
         return "/users/\(name)"
     }
